@@ -46,3 +46,23 @@ The statistics of the number of pixels annotated with each of the classes is pro
 
 
 There is also an incomplete inspection file which has per-image inspection data for some of the images.
+
+
+| Class                | Color          |
+|----------------------|----------------|
+| Other                | black          |
+| Sky                  | deepskyblue    |
+| Building             | khaki          |
+| Sidewalk             | gainsboro      |
+| Road                 | darkgrey       |
+| Sign/Pole/Light      | yellow         |
+| Tree                 | springgreen    |
+| Vehicle              | purple         |
+| Wall                 | khaki          |
+| Foundation           | gainsboro      |
+| Window               | azure          |
+| Door                 | sienna         |
+| Column               | royalblue      |
+| Beam                 | seagreen       |
+| Balcony              | purple         |
+| Void                 | orangered      |
