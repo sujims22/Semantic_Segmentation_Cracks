@@ -16,11 +16,7 @@ The annotations are in PNG format. Two sets of annotaitons are availble for each
 | Scratches            | red        |
 | Grooves/Joints       | green      |
 | Cables               | white      |
-| Filled Cracks        | lightgrey  |
-| Shear Cracks         | red        |
-| Plaster Cracks       | pink       |
-| OCracks              | cyan       |
-| Concrete Exposed Rebar | orange   |
+| Filled Cracks        | lightgrey  |  |
 | Cracks               | red        |
 | Exposed Rebar        | orange     |
 
