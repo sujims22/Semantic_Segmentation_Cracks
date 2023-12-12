@@ -1,5 +1,5 @@
 # Semantic Segmentation of cracks
-This project involves analyzing images of buildings damaged in the Mexico City 2017 Earthquake. The dataset `imageDamage.zip` contains pixel-level annotations of various types of damage.
+This project employs CNN and transformer models for semantic segmentation of building damage in Mexico City's 2017 earthquake, using annotated imagery to identify features like cracks and exposed rebar.
 
 
 ## Directory and File Descriptions
