@@ -4,13 +4,15 @@ This project employs CNN and transformer models for semantic segmentation of bui
 
 ## Directory and File Descriptions
 
-- `CNN Models/`: This directory contains the convolutional neural network models developed for the project, featuring different architectures for semantic segmentation.
-- `Damage dataset/`: Includes the dataset with images of structural damage. The README within this folder provides details on the dataset's characteristics and usage guidelines.
-- `Data Processing/`: Houses scripts and Jupyter notebooks used for preprocessing the data, preparing it for analysis and model training.
+- `README.md`: The main document that provides a detailed description of the project, instructions for setting up and running it, and other essential information for users and contributors.
 - `requirements.txt`: A crucial file listing all the Python dependencies needed to run the project. This file should be used to set up an appropriate Python environment.
 - `.gitignore`: Tells Git which files or directories to ignore, preventing unnecessary files from being included in the repository.
+- `Damage dataset/`: Includes the dataset with images of structural damage. The README within this folder provides details on the dataset's characteristics and usage guidelines.
+- `Data Processing/`: Houses scripts and Jupyter notebooks used for preprocessing the data, preparing it for analysis and model training.
+- `CNN Models/`: This directory contains the convolutional neural network models developed for the project, featuring different architectures for semantic segmentation.
+- `Transformer Models/`: This directory hosts the transformer-based models, reflecting the latest advancements in deep learning for image analysis.
 - `Project_Presentation.pptx`: Contains presentation slides that offer a comprehensive overview of the project, including its aims, methods, and key results.
-- `README.md`: The main document that provides a detailed description of the project, instructions for setting up and running it, and other essential information for users and contributors.
+
 
 
 
