@@ -1,12 +1,25 @@
 # Semantic Segmentation of cracks
 This project involves analyzing images of buildings damaged in the Mexico City 2017 Earthquake. The dataset `imageDamage.zip` contains pixel-level annotations of various types of damage.
 
+
+## Directory and File Descriptions
+
+- `src/`: Contains all the source code for the project. The `main.py` file is the entry point of the application, and `module.py` is a sample module demonstrating the code structure.
+- `data/`: This directory is intended for storing project data. Note: Due to size and privacy concerns, actual data files are not included in the repository.
+- `docs/`: Holds documentation for the project, including detailed API descriptions.
+- `tests/`: Contains test scripts and files, ensuring the codebase remains stable and functional as changes are made.
+- `notebooks/`: Jupyter notebooks for demonstrating usage examples and for conducting exploratory data analysis.
+- `requirements.txt`: Lists all the Python dependencies required to run the project.
+- `.gitignore`: Prevents specific files and directories from being tracked by Git (e.g., confidential data, system files).
+- `LICENSE`: The license file specifying the terms under which the project can be used.
+- `README.md`: Provides an overview of the project, setup instructions, and other essential information.
+
 ## Data Sources
 Images are gathered from:
 1. [DataCenterHub](https://datacenterhub.org/resources/14746)
 2. Photographed by Vedhus Hoskere
 
-## Annotations
+### Annotations
 Two sets of annotations are available in PNG format for each image:
 
 1. Fine damage and damage-like features, including features like cracks, exposed rebar, cables, etc
@@ -37,31 +50,6 @@ Two sets of annotations are available in PNG format for each image:
 | Spalling             | tomato     |
 | Voids                | yellow     |
 
-
-The statistics of the number of pixels annotated with each of the classes is provided in the Statistics folder
-There is also an incomplete inspection file which has per-image inspection data for some of the images.
-
-Another set of classes for the images, but this project is not of this focus
-| Class                | Color          |
-|----------------------|----------------|
-| Other                | black          |
-| Sky                  | deepskyblue    |
-| Building             | khaki          |
-| Sidewalk             | gainsboro      |
-| Road                 | darkgrey       |
-| Sign/Pole/Light      | yellow         |
-| Tree                 | springgreen    |
-| Vehicle              | purple         |
-| Wall                 | khaki          |
-| Foundation           | gainsboro      |
-| Window               | azure          |
-| Door                 | sienna         |
-| Column               | royalblue      |
-| Beam                 | seagreen       |
-| Balcony              | purple         |
-| Void                 | orangered      |
-
-
 ###  Use PIL to open images with single integer at each pixel as opposed to a color image ###
 ###  The index can be used to identify the corresponding class type 
 
@@ -74,3 +62,4 @@ from PIL import Image
 im = Image.open(os.path.join(folder,file))
 image = np.array(im)
 plt.subplot(image)
+
