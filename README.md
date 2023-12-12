@@ -4,15 +4,15 @@ This project employs CNN and transformer models for semantic segmentation of bui
 
 ## Directory and File Descriptions
 
-- `src/`: Contains all the source code for the project. The `main.py` file is the entry point of the application, and `module.py` is a sample module demonstrating the code structure.
-- `data/`: This directory is intended for storing project data. Note: Due to size and privacy concerns, actual data files are not included in the repository.
-- `docs/`: Holds documentation for the project, including detailed API descriptions.
-- `tests/`: Contains test scripts and files, ensuring the codebase remains stable and functional as changes are made.
-- `notebooks/`: Jupyter notebooks for demonstrating usage examples and for conducting exploratory data analysis.
-- `requirements.txt`: Lists all the Python dependencies required to run the project.
-- `.gitignore`: Prevents specific files and directories from being tracked by Git (e.g., confidential data, system files).
-- `LICENSE`: The license file specifying the terms under which the project can be used.
-- `README.md`: Provides an overview of the project, setup instructions, and other essential information.
+- `CNN Models/`: This directory contains the convolutional neural network models developed for the project, featuring different architectures for semantic segmentation.
+- `Damage dataset/`: Includes the dataset with images of structural damage. The README within this folder provides details on the dataset's characteristics and usage guidelines.
+- `Data Processing/`: Houses scripts and Jupyter notebooks used for preprocessing the data, preparing it for analysis and model training.
+- `requirements.txt`: A crucial file listing all the Python dependencies needed to run the project. This file should be used to set up an appropriate Python environment.
+- `.gitignore`: Tells Git which files or directories to ignore, preventing unnecessary files from being included in the repository.
+- `Project_Presentation.pptx`: Contains presentation slides that offer a comprehensive overview of the project, including its aims, methods, and key results.
+- `README.md`: The main document that provides a detailed description of the project, instructions for setting up and running it, and other essential information for users and contributors.
+
+
 
 ## Data Sources
 Images are gathered from:
