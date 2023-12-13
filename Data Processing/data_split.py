@@ -44,7 +44,7 @@ def split_data(source_folder_images, source_folder_masks, dest_folder, split_rat
 
 # Example usage
 source_folder_images = r"/Users/sujitharavichandran/Documents/GitHub/Semantic_Segmentation_Cracks/Damage dataset/imageDamage/imageDamage"  # Update with the path to your images folder
-source_folder_masks = r"/Users/sujitharavichandran/Documents/GitHub/Semantic_Segmentation_Cracks/Damage dataset/imageDamage/CoarseDamagePNG"  # Update with the path to your masks folder
-dest_folder = r"/Users/sujitharavichandran/Documents/GitHub/Semantic_Segmentation_Cracks/Damage dataset/imageDamage/CoarseDamage_split"  # Update with your desired destination path
+source_folder_masks = r"/Users/sujitharavichandran/Documents/GitHub/Semantic_Segmentation_Cracks/Damage dataset/imageDamage/FineDamageReducedPNG"  # Update with the path to your masks folder
+dest_folder = r"/Users/sujitharavichandran/Documents/GitHub/Semantic_Segmentation_Cracks/Damage dataset/imageDamage/FineDamage_split"  # Update with your desired destination path
 
 split_data(source_folder_images, source_folder_masks, dest_folder)
