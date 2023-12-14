@@ -1,0 +1,75 @@
+================ Training loss (Wed Dec 13 01:46:18 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 01:47:26 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 01:48:31 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 01:49:58 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 01:53:34 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 01:58:52 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 01:59:40 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:00:25 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:01:17 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:01:57 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:06:25 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:13:37 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:14:57 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:18:45 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:19:21 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:19:39 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 02:19:50 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 09:54:05 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 10:02:23 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 12:24:23 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 12:28:17 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 12:49:46 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 12:52:10 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:11:50 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:13:42 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:14:40 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:15:31 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:18:51 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:20:43 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:20:58 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:21:43 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:26:17 2023) ================
+flops:41.59 GMac, params:22.88 M
+(epoch: 1, iters: 782) mean_loss: 1.806226 lr: 0.001000
+val_mode:validation on epoch>> 1, mean tloss>> 1.805796 
+New best loss, saving...,best_val_loss=1.805796
+================ Training loss (Wed Dec 13 13:39:46 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:41:20 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:42:19 2023) ================
+flops:41.59 GMac, params:22.88 M
+================ Training loss (Wed Dec 13 13:43:19 2023) ================
+flops:41.59 GMac, params:22.88 M

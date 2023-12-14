@@ -1,0 +1,64 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
+from torchvision import transforms
+from torch.utils.data import DataLoader
+from utils.metrics import mean_iou
+from utils.visualization import visualize_segmentation
+
+
+
+# Load the trained model
+model_path = 'finetuned_Crackformer_final.pth'
+Net.load_state_dict(torch.load(model_path, map_location=device)['model_weights'])
+Net.eval()
+
+# Load test dataset
+data_test_path = r'C:\Users\skoka3\Desktop\CIVE-FP\test_train_valid\test'
+DIR_IMG_test = os.path.join(data_test_path, 'images')
+DIR_MASK_test = os.path.join(data_test_path, 'masks')
+
+img_names_test = [path.name for path in Path(DIR_IMG_test).glob('*.jpg')]
+mask_names_test = [path.name for path in Path(DIR_MASK_test).glob('*.png')]
+
+test_dataset = Crack_loader(img_dir=DIR_IMG_test, img_fnames=img_names_test, mask_dir=DIR_MASK_test,
+                             mask_fnames=mask_names_test, resize=True)
+test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
+
+# Calculate Test mIoU and Visualize
+test_miou_total = 0.0
+for i, batch in enumerate(test_loader):
+    img = batch['image'].to(device, dtype=torch.float)
+    true_mask = batch['mask'].to(device, dtype=torch.long)
+    with torch.no_grad():
+        pred_mask = Net(img)
+    test_miou = mean_iou(pred_mask, true_mask)
+    test_miou_total += test_miou.item()
+
+    if i < 5:  # Visualize first 5 test images
+        visualize_segmentation(img.cpu(), true_mask.cpu(), pred_mask.cpu(), i)
+
+avg_test_miou = test_miou_total / len(test_loader)
+print(f'Average Test mIoU: {avg_test_miou:.4f}')
+
+# Plot Training Loss and mIoU Graphs
+train_losses = np.load('train_losses.npy')
+val_losses = np.load('val_losses.npy')
+
+plt.figure(figsize=(12, 5))
+plt.subplot(1, 2, 1)
+plt.plot(train_losses, label='Training Loss')
+plt.plot(val_losses, label='Validation Loss')
+plt.title('Training and Validation Loss')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.legend()
+
+plt.subplot(1, 2, 2)
+plt.plot(range(1, epochs + 1), [avg_test_miou] * epochs, label='Test mIoU')
+plt.title('Test Mean Intersection over Union (mIoU)')
+plt.xlabel('Epoch')
+plt.ylabel('mIoU')
+plt.legend()
+
+plt.show()
